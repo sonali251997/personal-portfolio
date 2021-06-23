@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    background-color: #eee;;
+}
+
+h1,h2,h3{
+    padding-bottom:20px;
+}
+p{
+    margin: 10px 0px;
+
+}
+
+/* nvabar */
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background: #eee;
+    font-size: 30px;
+    
+}
+.nav-list{
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    cursor: pointer;
+    padding-top: 20px;
+
+}
+.nav-list a{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    
+}
+.nav-list a:hover{
+    background: #333;
+    color: #eee;
+    
+}
+
+
+.welcome{
+    background: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F09%2FCoding-Lifestyle.jpg&signature=2d3295519ac644b8c1d0d2d76cb2ca5c")
+    no-repeat center center/cover;
+    height: 400px;
+    opacity: 0.9;
+    color:#e9a719f6;
+    text-align: center;
+    padding-top: 170px;
+    font-size: 30px;
+    margin-top: 80px;
+    
+    }
+    .welcome h1{
+        font-size: 60px;
+    }
+    
+    .project-section-header{
+        text-align: center;
+        font-size: 40px;
+        padding-top: 40px;
+        max-width: 640px;
+        margin:0 auto 6rem auto;
+        color: rgba(116, 26, 26, 0.726);
+        border-bottom: 0.2rem solid rgba(116, 26, 26, 0.726);
+        margin-bottom: 60px;
+    } 
+    
+    .project-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+        grid-gap:4rem;
+        width:100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+        
+        
+    }
+    .project-grid a{
+        text-decoration: none;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        background: #333;
+       
+        
+    }
+    .project-img{
+        height:300px;
+        width: 100%;
+        object-fit: auto;
+        margin-bottom: 30px;
+       
+    }
+    img{
+        display:block;
+    }
+
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 80vh;
+        color: #fff;
+        padding-bottom: 80px;
+        background: #333;
+    }
+    .contact-section-header h2{
+        font-size: 4rem;
+    }
+    .contact-section-header p{
+        font-style: italic;
+        font-size: 20px;
+    }
+    .contact-links a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    
+    .btn{
+        display: inline;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem;
+        border-top: 4px solid rgba(116, 26, 26, 0.726);
+        font-size: 20px;
+        background: #333;
+        color:#fff;
+    }
+    footer p a{
+        text-decoration: none;
+        color: #fff;
+    }
